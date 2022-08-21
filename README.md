@@ -41,4 +41,4 @@ Se necesita controlar el acceso  y login  de usuarios para una empresa con dos s
 - **HU-13** Como empleado puedo iniciar sesión nuevamente en el portal, si el equipo de computo se reinicia o pierdo conexión.
 - **HU-14** Como empleado administrativo puedo registra un nuevo usuario en el sistema. 
 - **HU-15** Como empleado administrativo puedo eliminar un  un usuario del sistema. 
-- **HU-16** Como jefe de área puedo modificar la sede habilitada de un empleado  (presencial o virtual). 
+- **HU-16** Como jefe de área puedo modificar la sede habilitada de un empleado  (presencial o virtual) 
