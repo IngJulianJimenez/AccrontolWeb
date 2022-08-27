@@ -26,6 +26,10 @@ Se necesita registrar el  login  de usuarios para una empresa con dos sedes pres
 - La persistencia de los datos debe ser  en una BD sql server.
 - El sistema debe tener separado el front-end y el back-end, para tener las responsabilidades separadas y facilitar los cambios en el futuro. En el back-end se usarán servicios con API REST para facilitar las pruebas.
 
+# Diagramas
+
+https://drive.google.com/drive/folders/1InNyZoJXpO2VtTrREd-YALLft2IoGmF2
+
 # Historias de usuario 
 
 - **HU-01** Como supervisor-administrativo, puedo modificar la jornada laboral, ingreso y salida.
