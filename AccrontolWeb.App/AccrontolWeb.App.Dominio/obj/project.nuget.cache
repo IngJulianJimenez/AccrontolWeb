@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4AoObNAQ5pUEzvM5JOUhxmoT3FS40dhbZogJVrKDBof/AebAHUNjClL3nt0XpGs/DTsYwwpr1b6+n7Cp/nLEIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\camilo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\camilo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
