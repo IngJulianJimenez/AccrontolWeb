@@ -1,8 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "VETfipWkyc1b4OrhFKJuo/wlRw9YeOMzOxCPcyJiPcvjQpp141V5arTUlzhvXHveBoySkyzAWsJqufxyXG2Gcg==",
+  "dgSpecHash": "huuXgX9qR0I3xpI7IzO3+d28892ozirEEejlO4uUabLHbKk87pQhA/nSKbHKFsf0MC4+TiopuXvjOLzMNYPORQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ju_li\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ju_li\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ju_li\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ju_li\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ju_li\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ju_li\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
   "logs": []
 }

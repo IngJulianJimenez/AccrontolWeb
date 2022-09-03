@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace AccrontolWeb.App.Dominio
+﻿namespace AccrontolWeb.App.Dominio;
+public class Class1
 {
-    public class Class1
-    {
-    }
+
 }

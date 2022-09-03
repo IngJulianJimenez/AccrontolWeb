@@ -1,29 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj": {}
+    "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj": {}
   },
   "projects": {
-    "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj": {
+    "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj",
+        "projectUniqueName": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj",
         "projectName": "AccrontolWeb.App.Servicios",
-        "projectPath": "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj",
-        "packagesPath": "C:\\Users\\camilo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\obj\\",
+        "projectPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\AccrontolWeb.App.Servicios.csproj",
+        "packagesPath": "C:\\Users\\ju_li\\.nuget\\packages\\",
+        "outputPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Servicios\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\camilo\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\ju_li\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -34,7 +35,14 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -53,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.303\\RuntimeIdentifierGraph.json"
         }
       }
     }

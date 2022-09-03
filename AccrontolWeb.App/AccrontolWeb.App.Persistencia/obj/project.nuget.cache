@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r4S9VqKLv44/7DRtKtJXVslp82HbbSu1H0niZ+mj6CRI/OKiNXBK7HFEuN5xBEEH5a0geFYlU1bapNduw0CaGQ==",
+  "dgSpecHash": "Ig2tRR8Btk1jF1D2SnVu0aTFoLOUWxr403o6ua9JILRaO/3oi4bBjfzz/NEAY+5Agy4U+anrMFPws1UZDBKitg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\camilo\\Desktop\\GIT_MINTIC 2022\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Persistencia\\AccrontolWeb.App.Persistencia.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\camilo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\camilo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Persistencia\\AccrontolWeb.App.Persistencia.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
