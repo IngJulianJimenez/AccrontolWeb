@@ -16,9 +16,9 @@ namespace AccrontolWeb.App.Dominio
     public class RegistroHora
     {
         public int id { get; set; }
-        public Date horaInicio { get; set; }
-        public Date horaFinal { get; set; }
-        public Date fecha { get; set; }
+        public string horaInicio { get; set; }
+        public string horaFinal { get; set; }
+        public string fecha { get; set; }
         public string descripcion { get; set; }
 
         /*****************************************************
