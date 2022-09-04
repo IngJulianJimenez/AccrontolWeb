@@ -26,7 +26,6 @@ D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\A
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
-D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\Newtonsoft.Json.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\System.Drawing.Common.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
@@ -37,13 +36,9 @@ D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\A
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Consola\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
