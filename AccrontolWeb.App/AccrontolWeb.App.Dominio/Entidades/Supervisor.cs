@@ -13,11 +13,12 @@ namespace AccrontolWeb.App.Dominio
     crear clases
     los atributos de la clase tiene los getter y setter en {}
     con los : aplico herencia >> Supervisor : Trabajador (Supervisor hereda de Trabajador)
+    no se aplica herencia
     *****************************************************/
-    public class Supervisor:Trabajador
+    public class Supervisor
     {
         public int id { get; set; }
-        public string IdTrabajador { get; set; }
-        public string Descripcion { get; set; }
+        public Trabajador IdTrabajadorSpr { get; set; }
+        public string descripcionSpr { get; set; }
     }
 }

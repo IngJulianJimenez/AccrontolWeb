@@ -16,7 +16,7 @@ namespace AccrontolWeb.App.Dominio
     public class Area
     {
         public int id { get; set; }
-        public string descripcion { get; set; }
-        public string area { get; set; }
+        public string descripcionArea { get; set; }
+        public int area { get; set; }
     }
 }

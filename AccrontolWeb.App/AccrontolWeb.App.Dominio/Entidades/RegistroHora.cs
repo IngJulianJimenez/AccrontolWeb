@@ -19,7 +19,7 @@ namespace AccrontolWeb.App.Dominio
         public string horaInicio { get; set; }
         public string horaFinal { get; set; }
         public string fecha { get; set; }
-        public string descripcion { get; set; }
+        public string descripcionHh { get; set; }
 
         /*****************************************************
         relacion entre las clases RegistroHora y Trabajador

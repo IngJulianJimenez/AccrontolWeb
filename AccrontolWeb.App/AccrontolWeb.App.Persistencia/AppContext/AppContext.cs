@@ -24,6 +24,7 @@ namespace AccrontolWeb.App.Persistencia{
         public DbSet<RegistroHora> RegistroHora { get; set; }
         public DbSet<Sede> Sede { get; set; }
         public DbSet<Empresa> Empresa { get; set; }
+        public DbSet<SuperAdminTrabajador> SuperAdminTrabajador { get; set; }
 
         /*****************************************************
         conexion BD
@@ -32,7 +33,7 @@ namespace AccrontolWeb.App.Persistencia{
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){
             if (!optionsBuilder.IsConfigured){
                 optionsBuilder
-                .UseSqlServer("Server=DESKTOP-J4MCPL0; Database=BD_Visual;User ID=mintic_8;Password=mintic_8;");
+                .UseSqlServer("Server=DESKTOP-J4MCPL0; Database=BD_Proyecto;User ID=mintic_8;Password=mintic_8;");
             }
         }
     }
