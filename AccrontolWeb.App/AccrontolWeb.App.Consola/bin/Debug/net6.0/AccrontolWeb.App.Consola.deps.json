@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "AccrontolWeb.App.Consola/1.0.0": {
         "dependencies": {
+          "AccrontolWeb.App.Dominio": "1.0.0",
           "AccrontolWeb.App.Persistencia": "1.0.0",
           "Microsoft.EntityFrameworkCore": "5.0.0",
           "Microsoft.EntityFrameworkCore.Design": "5.0.0",

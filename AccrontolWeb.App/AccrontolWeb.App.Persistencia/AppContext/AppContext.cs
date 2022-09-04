@@ -11,10 +11,17 @@ otra clase puede trener el mismo nombre para un atributo, pero la logica es dife
 *****************************************************/
 namespace AccrontolWeb.App.Persistencia{
     /*****************************************************
+    El AppContext conecta las relaciona el Dominio con la BD
+    
     los atributos de la clase tiene los getter y setter en {}
     con los : aplico herencia >> AppContext : DbContext (AppContext hereda de DbContext)
-    DbSet crear tablas en BD
-    crear clases del modelo entidad relacion o tablas de la BD
+    DbSet <NombreClase> EquivalenciaTablaBd
+    
+    Crear una Interface por cada clase del dominio
+    instanciar cada interface con una clase
+
+    en las en las interfaces se crean las acciones CRUD
+    en las clases se ejecutan
     *****************************************************/
     public class AppContext : DbContext{
         public DbSet<Area> Area { get; set; }

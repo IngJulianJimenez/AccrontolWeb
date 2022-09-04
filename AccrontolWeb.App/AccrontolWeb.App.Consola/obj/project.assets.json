@@ -5826,6 +5826,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "AccrontolWeb.App.Dominio >= 1.0.0",
       "AccrontolWeb.App.Persistencia >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
@@ -5858,6 +5859,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj": {
+              "projectPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj"
+            },
             "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Persistencia\\AccrontolWeb.App.Persistencia.csproj": {
               "projectPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Persistencia\\AccrontolWeb.App.Persistencia.csproj"
             }

@@ -26,6 +26,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj": {
+                "projectPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj"
+              },
               "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Persistencia\\AccrontolWeb.App.Persistencia.csproj": {
                 "projectPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Persistencia\\AccrontolWeb.App.Persistencia.csproj"
               }

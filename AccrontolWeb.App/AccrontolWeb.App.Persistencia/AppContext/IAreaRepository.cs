@@ -13,8 +13,11 @@ namespace AccrontolWeb.App.Persistencia
     /*****************************************************
     metodos crud
     NombreClase metodoCRUD (TipoDato NombreObjeto)
+    TipoDato = a una clase del dominio en este caso son tablas
+    por ende trae todos sus atributos 
+    NombreObjeto = objeto(variable) del TipoDato
 
-    se escriben los contratos
+    en la interface crear las acciones CrUd
     *****************************************************/
     public interface IAreaRepository{
         //agregar

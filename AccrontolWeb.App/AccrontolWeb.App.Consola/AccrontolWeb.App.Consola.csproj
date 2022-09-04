@@ -2,6 +2,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AccrontolWeb.App.Persistencia\AccrontolWeb.App.Persistencia.csproj" />
+    <ProjectReference Include="..\AccrontolWeb.App.Dominio\AccrontolWeb.App.Dominio.csproj" />
   </ItemGroup>
 
   <ItemGroup>
