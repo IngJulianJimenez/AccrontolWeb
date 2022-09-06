@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AccrontolWeb.App.Dominio/1.0.0": {
+        "runtime": {
+          "AccrontolWeb.App.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AccrontolWeb.App.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

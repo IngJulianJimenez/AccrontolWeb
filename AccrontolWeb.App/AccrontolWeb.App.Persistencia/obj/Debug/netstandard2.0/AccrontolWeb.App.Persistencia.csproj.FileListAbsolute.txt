@@ -1,0 +1,10 @@
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.deps.json
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.dll
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.pdb
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.csproj.AssemblyReference.cache
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.AssemblyInfoInputs.cache
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.AssemblyInfo.cs
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.csproj.CoreCompileInputs.cache
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.dll
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\netstandard2.0\AccrontolWeb.App.Persistencia.pdb

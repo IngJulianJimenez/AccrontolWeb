@@ -1,0 +1,12 @@
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.csproj.AssemblyReference.cache
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.AssemblyInfoInputs.cache
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.AssemblyInfo.cs
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.csproj.CoreCompileInputs.cache
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\bin\Debug\net6.0\AccrontolWeb.App.Dominio.deps.json
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\bin\Debug\net6.0\AccrontolWeb.App.Dominio.dll
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\bin\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.dll
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\refint\AccrontolWeb.App.Dominio.dll
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
+D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\ref\AccrontolWeb.App.Dominio.dll

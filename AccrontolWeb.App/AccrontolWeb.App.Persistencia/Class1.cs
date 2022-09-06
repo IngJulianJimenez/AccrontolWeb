@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace AccrontolWeb.App.Persistencia
+﻿namespace AccrontolWeb.App.Persistencia;
+public class Class1
 {
-    public class Class1
-    {
-    }
+
 }

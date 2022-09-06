@@ -1,11 +1,24 @@
+/*****************************************************
+Importar clases
+*****************************************************/
 using System;
+
+/*****************************************************
+namespace agrupa los atributos de la clase para identificarlos,
+otra clase puede trener el mismo nombre para un atributo, pero la logica es diferente
+*****************************************************/
 namespace AccrontolWeb.App.Dominio
 {
-    public class Supervisor:Trabajador
+    /*****************************************************
+    crear clases
+    los atributos de la clase tiene los getter y setter en {}
+    con los : aplico herencia >> Supervisor : Trabajador (Supervisor hereda de Trabajador)
+    no se aplica herencia
+    *****************************************************/
+    public class Supervisor
     {
-        public int Id { get; set; }
-        public string IdTrabajador { get; set; }
-        public string Descripcion { get; set; }
-        
+        public int id { get; set; }
+        public Trabajador IdTrabajadorSpr { get; set; }
+        public string descripcionSpr { get; set; }
     }
 }

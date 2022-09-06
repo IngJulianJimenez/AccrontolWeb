@@ -1,14 +1,32 @@
+/*****************************************************
+Importar clases
+*****************************************************/
 using System;
+
+/*****************************************************
+namespace agrupa los atributos de la clase para identificarlos
+otra clase puede tener el mismo nombre para un atributo, pero diferente logica
+*****************************************************/
 namespace AccrontolWeb.App.Dominio
 {
+    /*****************************************************
+    crear clases
+    los atributos de la clase tiene los getter y setter en {}
+    *****************************************************/
     public class RegistroHora
     {
-        public int Id { get; set; }
-        public string HoraInicio { get; set; }
-        public string HoraFinal { get; set; }
-        public Date Fecha { get; set; }
-        public String IdTrabajador { get; set; }
-        public string Descripcion { get; set; }
+        public int id { get; set; }
+        public string horaInicio { get; set; }
+        public string horaFinal { get; set; }
+        public string fecha { get; set; }
+        public string descripcionHh { get; set; }
+
+        /*****************************************************
+        relacion entre las clases RegistroHora y Trabajador
+        accedo a los atributos de la clase dependiente
+        *****************************************************/
+        public Trabajador idTrabajador { get; set; }
+        
         
     }
 }
