@@ -12,11 +12,17 @@ namespace AccrontolWeb.App.WebApp
         }
 
         public void OnPost(){
-            //campo name en el html
+            //var = Request.Form [name html]
             var descripcion = Request.Form["descripcion"];
+            var nombre = Request.Form["nombre"];
+            var usuario = Request.Form["usuario"];
+            var password = Request.Form["password"];
+            var active = 1; //usuario nuevo se registra nuevo
+            var idAreaid = Request.Form["idAreaid"];
+            var idSedeid = Request.Form["idSedeid"];
 
             //selector
-            var SelectorArea = Request.Form["SelectorArea"];
+            //var SelectorArea = Request.Form["SelectorArea"];
 
             //validar datos de las personas
 
