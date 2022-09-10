@@ -64,7 +64,7 @@ namespace AccrontolWeb.App.Persistencia{
         //listar segundo metodo, con parametro de busqueda
         List<Area> IAreaRepository.ObtebnerAreaDos(string busqueda1){
             return _appContext.Area.Where(vr => vr.descripcionArea == busqueda1).ToList();  
-            //_appContext.Area.Where(vr => vr.descripcionArea == busqueda1 && vr.area ==vr.busqueda2); 
+            //_appContext.Area.Where(vr => vr.Columna1 == busqueda1 && vr.Columna ==vr.busqueda2); 
         }
 
         //listar tercer metodo, coincidir caracteres
@@ -76,7 +76,7 @@ namespace AccrontolWeb.App.Persistencia{
         //buscador, se usa  para varias columnas, con la ayuda del || 0 &&, con el mimso tipo de valor preferiblemente String, int 
         IEnumerable<Area> IAreaRepository.BuscadorArea(string buesqueda4){
             return _appContext.Area.Where(vr => vr.descripcionArea.Contains(buesqueda4)).ToList();  
-            //_appContext.Area.Where(vr => vr.descripcionArea.Contains(buesqueda4) || vr.area.Contains(buesqueda4)).ToList();
+            //_appContext.Area.Where(vr => vr.Columna1.Contains(buesqueda4) || vr.Columna1.Contains(buesqueda4)).ToList();
         }
 
         //buscar por Id

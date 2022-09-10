@@ -23,10 +23,16 @@ namespace AccrontolWeb.App.Dominio
         public int active { get; set; }
 
         /*****************************************************
+        las foraneas se crean NombreCalseid
+        *****************************************************/
+        public int Areaid { get; set; }
+        public int Sedeid { get; set; }
+
+        /*****************************************************
         relacion entre las clases 
         accedo a los atributos de la clase dependiente
         *****************************************************/
-        public Area idArea { get; set; }
-        public Sede idSede { get; set; }
+        public Area Area { get; set; }
+        public Sede Sede { get; set; }
     }
 }

@@ -18,8 +18,13 @@ namespace AccrontolWeb.App.Dominio
     public class Administracion
     {
         public int id { get; set; }
-        public Trabajador idTrabajadorAdm { get; set; }
+        public int Trabajadorid { get; set; } 
         public string descripcionAdm { get; set; }
-        
+
+        /*****************************************************
+        relacion entre las clases 
+        accedo a los atributos de la clase dependiente
+        *****************************************************/
+        public Trabajador Trabajador { get; set; }        
     }
 }

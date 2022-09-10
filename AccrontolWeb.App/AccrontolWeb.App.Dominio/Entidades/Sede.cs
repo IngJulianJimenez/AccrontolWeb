@@ -20,11 +20,13 @@ namespace AccrontolWeb.App.Dominio
         public string nombreSede { get; set; }
         public string direccion { get; set; }
         public string telefono{ get; set; }
+        public int Empresaid { get; set; }//foranea
 
         /*****************************************************
         relacion entre las clases Sede y Empresa
         accedo a los atributos de la clase dependiente
         *****************************************************/
-        public Empresa idEmpresa { get; set; }
+        public Empresa Empresa { get; set; }
+        
     }
 }

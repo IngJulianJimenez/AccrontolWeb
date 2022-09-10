@@ -25,8 +25,6 @@ namespace AccrontolWeb.App.Dominio
         relacion entre las clases RegistroHora y Trabajador
         accedo a los atributos de la clase dependiente
         *****************************************************/
-        public Trabajador idTrabajador { get; set; }
-        
-        
+        public Trabajador Trabajador { get; set; }
     }
 }

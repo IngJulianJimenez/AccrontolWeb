@@ -7,37 +7,41 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
+#nullable disable
+
 namespace AccrontolWeb.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20220904001901_Inicial")]
+    [Migration("20220910232251_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .UseIdentityColumns()
-                .HasAnnotation("Relational:MaxIdentifierLength", 128)
-                .HasAnnotation("ProductVersion", "5.0.0");
+                .HasAnnotation("ProductVersion", "6.0.0")
+                .HasAnnotation("Relational:MaxIdentifierLength", 128);
+
+            SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.Administracion", b =>
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int>("Trabajadorid")
+                        .HasColumnType("int");
 
                     b.Property<string>("descripcionAdm")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("idTrabajadorAdmid")
-                        .HasColumnType("int");
-
                     b.HasKey("id");
 
-                    b.HasIndex("idTrabajadorAdmid");
+                    b.HasIndex("Trabajadorid");
 
                     b.ToTable("Administracion");
                 });
@@ -46,8 +50,9 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
                     b.Property<int>("area")
                         .HasColumnType("int");
@@ -65,8 +70,9 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
 
                     b.Property<string>("nit")
                         .IsRequired()
@@ -85,8 +91,12 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int>("Trabajadorid")
+                        .HasColumnType("int");
 
                     b.Property<string>("descripcionHh")
                         .IsRequired()
@@ -104,12 +114,9 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("idTrabajadorid")
-                        .HasColumnType("int");
-
                     b.HasKey("id");
 
-                    b.HasIndex("idTrabajadorid");
+                    b.HasIndex("Trabajadorid");
 
                     b.ToTable("RegistroHora");
                 });
@@ -118,8 +125,12 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int>("Empresaid")
+                        .HasColumnType("int");
 
                     b.Property<string>("ciudad")
                         .IsRequired()
@@ -128,9 +139,6 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                     b.Property<string>("direccion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("idEmpresaid")
-                        .HasColumnType("int");
 
                     b.Property<string>("nombreSede")
                         .IsRequired()
@@ -142,7 +150,7 @@ namespace AccrontolWeb.App.Persistencia.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("idEmpresaid");
+                    b.HasIndex("Empresaid");
 
                     b.ToTable("Sede");
                 });
@@ -151,25 +159,26 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int?>("idAdministradorid")
                         .HasColumnType("int");
 
-                    b.Property<int?>("idSupervisorid")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int?>("Administracionid")
                         .HasColumnType("int");
 
-                    b.Property<int?>("idTrabajadorid")
+                    b.Property<int?>("Supervisorid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Trabajadorid")
                         .HasColumnType("int");
 
                     b.HasKey("id");
 
-                    b.HasIndex("idAdministradorid");
+                    b.HasIndex("Administracionid");
 
-                    b.HasIndex("idSupervisorid");
+                    b.HasIndex("Supervisorid");
 
-                    b.HasIndex("idTrabajadorid");
+                    b.HasIndex("Trabajadorid");
 
                     b.ToTable("SuperAdminTrabajador");
                 });
@@ -178,10 +187,11 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
 
-                    b.Property<int?>("IdTrabajadorSprid")
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int>("Trabajadorid")
                         .HasColumnType("int");
 
                     b.Property<string>("descripcionSpr")
@@ -190,7 +200,7 @@ namespace AccrontolWeb.App.Persistencia.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("IdTrabajadorSprid");
+                    b.HasIndex("Trabajadorid");
 
                     b.ToTable("Supervisor");
                 });
@@ -199,16 +209,17 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     b.Property<int>("id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"), 1L, 1);
+
+                    b.Property<int>("Areaid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Sedeid")
+                        .HasColumnType("int");
 
                     b.Property<int>("active")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("idAreaid")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("idSedeid")
                         .HasColumnType("int");
 
                     b.Property<string>("identificacion")
@@ -229,83 +240,97 @@ namespace AccrontolWeb.App.Persistencia.Migrations
 
                     b.HasKey("id");
 
-                    b.HasIndex("idAreaid");
+                    b.HasIndex("Areaid");
 
-                    b.HasIndex("idSedeid");
+                    b.HasIndex("Sedeid");
 
                     b.ToTable("Trabajador");
                 });
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.Administracion", b =>
                 {
-                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "idTrabajadorAdm")
+                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "Trabajador")
                         .WithMany()
-                        .HasForeignKey("idTrabajadorAdmid");
+                        .HasForeignKey("Trabajadorid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("idTrabajadorAdm");
+                    b.Navigation("Trabajador");
                 });
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.RegistroHora", b =>
                 {
-                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "idTrabajador")
+                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "Trabajador")
                         .WithMany()
-                        .HasForeignKey("idTrabajadorid");
+                        .HasForeignKey("Trabajadorid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("idTrabajador");
+                    b.Navigation("Trabajador");
                 });
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.Sede", b =>
                 {
-                    b.HasOne("AccrontolWeb.App.Dominio.Empresa", "idEmpresa")
+                    b.HasOne("AccrontolWeb.App.Dominio.Empresa", "Empresa")
                         .WithMany()
-                        .HasForeignKey("idEmpresaid");
+                        .HasForeignKey("Empresaid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("idEmpresa");
+                    b.Navigation("Empresa");
                 });
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.SuperAdminTrabajador", b =>
                 {
-                    b.HasOne("AccrontolWeb.App.Dominio.Administracion", "idAdministrador")
+                    b.HasOne("AccrontolWeb.App.Dominio.Administracion", "Administracion")
                         .WithMany()
-                        .HasForeignKey("idAdministradorid");
+                        .HasForeignKey("Administracionid");
 
-                    b.HasOne("AccrontolWeb.App.Dominio.Supervisor", "idSupervisor")
+                    b.HasOne("AccrontolWeb.App.Dominio.Supervisor", "Supervisor")
                         .WithMany()
-                        .HasForeignKey("idSupervisorid");
+                        .HasForeignKey("Supervisorid");
 
-                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "idTrabajador")
+                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "Trabajador")
                         .WithMany()
-                        .HasForeignKey("idTrabajadorid");
+                        .HasForeignKey("Trabajadorid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("idAdministrador");
+                    b.Navigation("Administracion");
 
-                    b.Navigation("idSupervisor");
+                    b.Navigation("Supervisor");
 
-                    b.Navigation("idTrabajador");
+                    b.Navigation("Trabajador");
                 });
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.Supervisor", b =>
                 {
-                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "IdTrabajadorSpr")
+                    b.HasOne("AccrontolWeb.App.Dominio.Trabajador", "Trabajador")
                         .WithMany()
-                        .HasForeignKey("IdTrabajadorSprid");
+                        .HasForeignKey("Trabajadorid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("IdTrabajadorSpr");
+                    b.Navigation("Trabajador");
                 });
 
             modelBuilder.Entity("AccrontolWeb.App.Dominio.Trabajador", b =>
                 {
-                    b.HasOne("AccrontolWeb.App.Dominio.Area", "idArea")
+                    b.HasOne("AccrontolWeb.App.Dominio.Area", "Area")
                         .WithMany()
-                        .HasForeignKey("idAreaid");
+                        .HasForeignKey("Areaid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("AccrontolWeb.App.Dominio.Sede", "idSede")
+                    b.HasOne("AccrontolWeb.App.Dominio.Sede", "Sede")
                         .WithMany()
-                        .HasForeignKey("idSedeid");
+                        .HasForeignKey("Sedeid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.Navigation("idArea");
+                    b.Navigation("Area");
 
-                    b.Navigation("idSede");
+                    b.Navigation("Sede");
                 });
 #pragma warning restore 612, 618
         }

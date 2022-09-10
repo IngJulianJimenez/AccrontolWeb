@@ -44,7 +44,7 @@ namespace Consola// Note: actual namespace depends on the project name.
             //_ObtebnerAreaDos();
             //_ObtebnerAreaTres();
             //_BuscadorArea();
-            _BuscadorAreaId();
+            //_BuscadorAreaId();
             //_ActulizarArea();
             //_EliminarArea();
 
@@ -62,8 +62,8 @@ namespace Consola// Note: actual namespace depends on the project name.
         {
             var insertTablaArea = new Area
             {
-                descripcionArea = "Agregar desde codigo",
-                area = 2
+                descripcionArea = "soporte IT",
+                area = 3
             };
             var result = _AreaRepository.Add(insertTablaArea);
             if (result > 0)
@@ -93,7 +93,7 @@ namespace Consola// Note: actual namespace depends on the project name.
         //listar segundo metodo, trae el contenido que tenga el mismo valor que se envia como parametro
         public static void _ObtebnerAreaDos()
         {
-            var listadoAreas = _AreaRepository.ObtebnerAreaDos("Prueba insert Visual");
+            var listadoAreas = _AreaRepository.ObtebnerAreaDos("administrativos");
             foreach (var area in listadoAreas)
             {
                 Console.WriteLine("Id: " + area.id + " Descripcion: " + area.descripcionArea + " numero Area: " + area.area);
@@ -103,7 +103,7 @@ namespace Consola// Note: actual namespace depends on the project name.
         //listar segundo metodo, trae todo el contenido que contenga uno o dos caracteres como parametros
         public static void _ObtebnerAreaTres()
         {
-            var listadoAreas = _AreaRepository.ObtebnerAreaTres("ual");
+            var listadoAreas = _AreaRepository.ObtebnerAreaTres("admin");
             foreach (var area in listadoAreas)
             {
                 Console.WriteLine("Id: " + area.id + " Descripcion: " + area.descripcionArea + " numero Area: " + area.area);
@@ -114,11 +114,11 @@ namespace Consola// Note: actual namespace depends on the project name.
         metodos posibles para buscar
         *****************************************************/
 
-        //buscador, se usa para varias columnas, con la ayuda de operadpres logicos || &&
+        //buscador, se usa para varias columnas, con la ayuda de operadores logicos || &&
         //las columnas a buscar deben ser del mismo valor int o string
         public static void _BuscadorArea()
         {
-            var listadoAreas = _AreaRepository.BuscadorArea("ual");
+            var listadoAreas = _AreaRepository.BuscadorArea("admin");
             foreach (var area in listadoAreas)
             {
                 Console.WriteLine("Id: " + area.id + " Descripcion: " + area.descripcionArea + " numero Area: " + area.area);
@@ -151,7 +151,7 @@ namespace Consola// Note: actual namespace depends on the project name.
             var existe = _AreaRepository.BuscadorAreaId(2);
             if (existe != null)
             {
-                existe.descripcionArea = "Actualizo desde VsCode";
+                existe.descripcionArea = "desarollo";
                 existe.area = 14;
                 var result = _AreaRepository.ActulizarArea(existe);
                 if (result > 0)
@@ -204,9 +204,6 @@ namespace Consola// Note: actual namespace depends on the project name.
             var _idSede = _SedeRepository.BuscadorSedeId(3);
             if ((_idArea != null) && (_idSede != null))
             {
-                var n=_idArea.id;
-
-                
                 var insertTablaTRabajador = new Trabajador
                 {
                     identificacion = "1234567890",
@@ -214,11 +211,11 @@ namespace Consola// Note: actual namespace depends on the project name.
                     usuario = "jjimeneza",
                     password = "1234",
                     active = 1,
-                    idArea = n
+                    Areaid = _idArea.id, // solo el id
+                    Sedeid = _idSede.id  // solo el id
                 };
-                //var resultx = _TrabajadorRepository.Add(insertTablaTRabajador);
-                var resultx = 1;
-                if (resultx > 0)
+                var result = _TrabajadorRepository.Add(insertTablaTRabajador);
+                if (result > 0)
                 {
                     Console.WriteLine("Trabajador ingresado con exito");
                 }
