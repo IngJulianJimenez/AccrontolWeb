@@ -53,6 +53,11 @@ namespace AccrontolWeb.App.WebApp
             {
                 Console.WriteLine("Error al registrar empleado");
             }
+
+            // redigir a otra pagina desde el back
+            // el ./ es por que esta al mismo nivel
+            // recargo la misma pagina
+            // return RedirectToPage ("./Create");
         }
     }
 }
