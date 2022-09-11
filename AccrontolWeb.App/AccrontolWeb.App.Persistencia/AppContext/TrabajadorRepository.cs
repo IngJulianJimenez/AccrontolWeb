@@ -29,7 +29,7 @@ namespace AccrontolWeb.App.Persistencia
         TipoDato = a una clase en este caso es el Contexto que hace puento con el Dominio
         NombreObjeto = objeto(variable) del TipoDato
         *****************************************************/
-        public TrabajadorRepository (AppContext context)
+        public TrabajadorRepository(AppContext context)
         { //(clase NombreObjeto) 
             _appContext = context;
         }
@@ -58,6 +58,26 @@ namespace AccrontolWeb.App.Persistencia
             var TablaTrabajador = _appContext.Trabajador.Add(empleado);
             var result = _appContext.SaveChanges();
             return result;
+        }
+
+        //listar
+        List<Trabajador> ITrabajadorRepository.ObtebnerTrabajadorDos(string documento)
+        {
+            return _appContext.Trabajador.Where(vr => vr.identificacion == documento).ToList();
+            //_appContext.Area.Where(vr => vr.descripcionArea == busqueda1 && vr.area ==vr.busqueda2); 
+        }
+
+        //buscar por Id
+        Trabajador ITrabajadorRepository.BuscadorTrabajadorId(int id)
+        {
+            return _appContext.Trabajador.Find(id);
+        }
+
+        //Actulizar, retorna un entero con el numero de registros afectados
+        int ITrabajadorRepository.ActulizarTrabajador(Trabajador empleado)
+        {
+            _appContext.Trabajador.Update(empleado);
+            return _appContext.SaveChanges();
         }
     }
 }

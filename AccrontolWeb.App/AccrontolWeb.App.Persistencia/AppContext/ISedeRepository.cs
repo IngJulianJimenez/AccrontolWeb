@@ -22,8 +22,8 @@ namespace AccrontolWeb.App.Persistencia
 
     en la interface crear las acciones CrUd
     *****************************************************/
-    public interface ISedeRepository{
-
+    public interface ISedeRepository
+    {
         //buscar por Id
         Sede BuscadorSedeId(int id);
     }

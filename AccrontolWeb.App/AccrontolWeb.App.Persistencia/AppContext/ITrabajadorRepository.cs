@@ -26,6 +26,14 @@ namespace AccrontolWeb.App.Persistencia
     {
         //agregar
         int Add(Trabajador empleado);
-    }
 
+        //listar
+        List<Trabajador> ObtebnerTrabajadorDos(string documento);
+
+        //buscar por Id
+        Trabajador BuscadorTrabajadorId(int id);
+
+        //Actulizar, retorna un entero con el numero de registros afectados
+        int ActulizarTrabajador(Trabajador empleado);
+    }
 }

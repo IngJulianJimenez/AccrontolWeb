@@ -14,7 +14,7 @@ namespace Consola// Note: actual namespace depends on the project name.
         private static IAreaRepository _AreaRepository = new AreaRepository(new AccrontolWeb.App.Persistencia.AppContext()); //Tabla Area
         private static ISedeRepository _SedeRepository = new SedeRepository(new AccrontolWeb.App.Persistencia.AppContext()); //Tabla Sede
         private static ITrabajadorRepository _TrabajadorRepository = new TrabajadorRepository(new AccrontolWeb.App.Persistencia.AppContext()); //Tabla Trabajador
-  
+
         static void Main(string[] args)
         {
             /*
@@ -50,8 +50,9 @@ namespace Consola// Note: actual namespace depends on the project name.
 
             //metodos Proyecto
             //_BuscadorSedeId();
-            _AgregarTrabajador();
-            
+            //_ObtebnerTrabajadorDos();
+            //_BuscadorTrabajadorId();
+            _ActulizarTrabajador();
         }
 
         /*****************************************************
@@ -130,14 +131,14 @@ namespace Consola// Note: actual namespace depends on the project name.
         {
             var result = _AreaRepository.BuscadorAreaId(2);
             Console.WriteLine("Id: " + result.id + " Descripcion: " + result.descripcionArea + " numero Area: " + result.area);
-            var n=result.id;
-            Console.WriteLine("El valor del area ="+ n +" El area es entero?:" + n.GetType());
+            var n = result.id;
+            Console.WriteLine("El valor del area =" + n + " El area es entero?:" + n.GetType());
 
         }
         public static void _BuscadorSedeId()
         {
             var result = _SedeRepository.BuscadorSedeId(2);
-            Console.WriteLine("Id: " + result.id +" NombreSede: " + result.nombreSede + " numero Sede: " + result.id);
+            Console.WriteLine("Id: " + result.id + " NombreSede: " + result.nombreSede + " numero Sede: " + result.id);
         }
 
         /*****************************************************
@@ -195,12 +196,11 @@ namespace Consola// Note: actual namespace depends on the project name.
         }
 
         /*****************************************************
-       
+        
         *****************************************************/
         public static void _AgregarTrabajador()
         {
-            
-            var _idArea = _AreaRepository.BuscadorAreaId(1);
+            var _idArea = _AreaRepository.BuscadorAreaId(2);
             var _idSede = _SedeRepository.BuscadorSedeId(3);
             if ((_idArea != null) && (_idSede != null))
             {
@@ -228,8 +228,53 @@ namespace Consola// Note: actual namespace depends on the project name.
             {
                 Console.WriteLine("Ha ocurrido un error con los datos ingresados");
             }
-       
+        }
+        //listar
+        public static void _ObtebnerTrabajadorDos()
+        {
+            var listado = _TrabajadorRepository.ObtebnerTrabajadorDos("1234567890");
+            foreach (var lst in listado)
+            {
+                Console.WriteLine("identificacion " + lst.identificacion + " nombre " + lst.nombre + " Areaid " + lst.Areaid + " Sedeid " + lst.Sedeid + " Activo " + lst.active);
+            }
+        }
 
+        //buscar por Id, usar antes de eliminar y actulizar, para saber si el registro existe
+        public static void _BuscadorTrabajadorId()
+        {
+            var lst = _TrabajadorRepository.BuscadorTrabajadorId(1);
+            Console.WriteLine("id " + lst.id + " identificacion " + lst.identificacion + " nombre " + lst.nombre + " Areaid " + lst.Areaid + " Sedeid " + lst.Sedeid + " Activo " + lst.active);
+        }
+
+        //Actulizar, retorna un entero con el numero de registros afectados
+        public static void _ActulizarTrabajador()
+        {
+            //buscar si existe, preferiblemete por Id
+            var existe = _TrabajadorRepository.BuscadorTrabajadorId(1);
+            if (existe != null)
+            {
+                existe.nombre = "Prueba vs Code";
+                existe.usuario = "2345";
+                existe.password = "2345";
+                existe.active = 0;
+                existe.Areaid = 1;
+                existe.Sedeid = 1;
+
+                var result = _TrabajadorRepository.ActulizarTrabajador(existe);
+                if (result > 0)
+                {
+                    Console.WriteLine("Se actulizo registro");
+                }
+                else
+                {
+                    Console.WriteLine("No actulizo registro");
+                }
+            }
+            else
+            {
+                Console.WriteLine("No existe registro a actulizar");
+            }
         }
     }
 }
+

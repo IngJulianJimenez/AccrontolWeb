@@ -10,9 +10,11 @@ using System.Linq;
 namespace agrupa los atributos de la clase para identificarlos,
 otra clase puede trener el mismo nombre para un atributo, pero la logica es diferente
 *****************************************************/
-namespace AccrontolWeb.App.Persistencia{
+namespace AccrontolWeb.App.Persistencia
+{
     //con los : implemeto una clase >> AreaRepository : IAreaRepository (AreaRepository implementa de IAreaRepository)
-    public class AreaRepository : IAreaRepository{
+    public class AreaRepository : IAreaRepository
+    {
 
         /*****************************************************
         El contexto me permite la comuniocan con la BD
@@ -27,7 +29,8 @@ namespace AccrontolWeb.App.Persistencia{
         TipoDato = a una clase en este caso es el Contexto que hace puento con el Dominio
         NombreObjeto = objeto(variable) del TipoDato
         *****************************************************/
-        public AreaRepository(AppContext context){ //(clase NombreObjeto) 
+        public AreaRepository(AppContext context)
+        { //(clase NombreObjeto) 
             _appContext = context;
         }
 
@@ -50,48 +53,56 @@ namespace AccrontolWeb.App.Persistencia{
         Para ejecutar de forma manual, generar el codigo desde el proyecto Consola (Program.cs)
         *****************************************************/
         //insertar en una tabla
-        int IAreaRepository.Add (Area area){ 
+        int IAreaRepository.Add(Area area)
+        {
             var TablaArea = _appContext.Area.Add(area);
             var result = _appContext.SaveChanges();
             return result;
-        } 
+        }
 
         //listar primer metodo
-        IEnumerable<Area> IAreaRepository.ObtebnerArea(){
-            return _appContext.Area;  
+        IEnumerable<Area> IAreaRepository.ObtebnerArea()
+        {
+            return _appContext.Area;
         }
 
         //listar segundo metodo, con parametro de busqueda
-        List<Area> IAreaRepository.ObtebnerAreaDos(string busqueda1){
-            return _appContext.Area.Where(vr => vr.descripcionArea == busqueda1).ToList();  
+        List<Area> IAreaRepository.ObtebnerAreaDos(string busqueda1)
+        {
+            return _appContext.Area.Where(vr => vr.descripcionArea == busqueda1).ToList();
             //_appContext.Area.Where(vr => vr.Columna1 == busqueda1 && vr.Columna ==vr.busqueda2); 
         }
 
         //listar tercer metodo, coincidir caracteres
-        List<Area> IAreaRepository.ObtebnerAreaTres(string busqueda3){
-            return _appContext.Area.Where(vr => vr.descripcionArea.Contains(busqueda3)).ToList();  
+        List<Area> IAreaRepository.ObtebnerAreaTres(string busqueda3)
+        {
+            return _appContext.Area.Where(vr => vr.descripcionArea.Contains(busqueda3)).ToList();
             //_appContext.Area.Where(vr => vr.descripcionArea == busqueda1 && vr.area ==vr.busqueda2); 
         }
 
         //buscador, se usa  para varias columnas, con la ayuda del || 0 &&, con el mimso tipo de valor preferiblemente String, int 
-        IEnumerable<Area> IAreaRepository.BuscadorArea(string buesqueda4){
-            return _appContext.Area.Where(vr => vr.descripcionArea.Contains(buesqueda4)).ToList();  
+        IEnumerable<Area> IAreaRepository.BuscadorArea(string buesqueda4)
+        {
+            return _appContext.Area.Where(vr => vr.descripcionArea.Contains(buesqueda4)).ToList();
             //_appContext.Area.Where(vr => vr.Columna1.Contains(buesqueda4) || vr.Columna1.Contains(buesqueda4)).ToList();
         }
 
         //buscar por Id
-        Area IAreaRepository.BuscadorAreaId(int id){
+        Area IAreaRepository.BuscadorAreaId(int id)
+        {
             return _appContext.Area.Find(id);
         }
 
         //Actulizar, retorna un entero con el numero de registros afectados
-        int IAreaRepository.ActulizarArea (Area area){
+        int IAreaRepository.ActulizarArea(Area area)
+        {
             _appContext.Area.Update(area);
             return _appContext.SaveChanges();
         }
 
         //Eliminar, retorna un entero con el numero de registros afectados
-        int IAreaRepository.EliminarArea (Area area){
+        int IAreaRepository.EliminarArea(Area area)
+        {
             _appContext.Area.Remove(area);
             return _appContext.SaveChanges();
         }

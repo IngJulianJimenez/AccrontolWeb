@@ -10,9 +10,11 @@ using System.Linq;
 namespace agrupa los atributos de la clase para identificarlos,
 otra clase puede trener el mismo nombre para un atributo, pero la logica es diferente
 *****************************************************/
-namespace AccrontolWeb.App.Persistencia{
+namespace AccrontolWeb.App.Persistencia
+{
     //con los : implemeto una clase >> AreaRepository : IAreaRepository (AreaRepository implementa de IAreaRepository)
-    public class SedeRepository : ISedeRepository{
+    public class SedeRepository : ISedeRepository
+    {
 
         /*****************************************************
         El contexto me permite la comuniocan con la BD
@@ -27,7 +29,8 @@ namespace AccrontolWeb.App.Persistencia{
         TipoDato = a una clase en este caso es el Contexto que hace puento con el Dominio
         NombreObjeto = objeto(variable) del TipoDato
         *****************************************************/
-        public SedeRepository(AppContext context){ //(clase NombreObjeto) 
+        public SedeRepository(AppContext context)
+        { //(clase NombreObjeto) 
             _appContext = context;
         }
 
@@ -49,9 +52,10 @@ namespace AccrontolWeb.App.Persistencia{
         
         Para ejecutar de forma manual, generar el codigo desde el proyecto Consola (Program.cs)
         *****************************************************/
-        
+
         //buscar por Id
-        Sede ISedeRepository.BuscadorSedeId(int id){
+        Sede ISedeRepository.BuscadorSedeId(int id)
+        {
             return _appContext.Sede.Find(id);
         }
     }
