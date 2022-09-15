@@ -1,11 +1,9 @@
 ﻿@page
-@model AccrontolWeb.App.WebApp.CreateModel
+@model AccrontolWeb.App.WebApp.ActulizarDatosModel
 @{
-    ViewData["Title"] = "Registro Personas";
+    ViewData["Title"] = "Actulizar datos";
     Layout = "_Layout"; //Generar una plantilla con estilos
-    //invocar archivo JavaScript debe estar configurado en el Layout, en la aprte inferior
-    //de esta forma se le solicita al codigo que es mandatorio
-    ViewData["script"] = "Create.js"; 
+    var empleado = Model.empleado; //variable global
 }
 <div class="container">
     <div class="row">
@@ -13,37 +11,47 @@
 
         </div>
         <div class="col-md-8 col-ms-12">
-            <h1>Registro Empleado</h1>
+            <h1>Actulizar Datos</h1>
             <form method="post">
                 <div class="form-group">
+                    <!--value= variableGlobal.atibuto" se escribe en el front -->
                     <label for="descripcion">Numero documento: </label>
                     <input type="text" class="form-control" id="identificacion" name="identificacion"
-                        placeholder="Ingrese identificación" minlength="2" maxlength="50">
+                        placeholder="Ingrese identificación" minlength="2" maxlength="50" value="@empleado.identificacion">
                 </div>
                 <div class="form-group">
                     <label for="area">Nombre empleado: </label>
                     <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre"
-                        minlength="2" maxlength="50">
+                        minlength="2" maxlength="50" value="@empleado.nombre">
                 </div>
                 <div class="form-group">
                     <label for="area">Usuario: </label>
                     <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingrese usuario"
-                        minlength="2" maxlength="50">
+                        minlength="2" maxlength="50" value="@empleado.usuario">
                 </div>
                 <div class="form-group">
                     <label for="area">Contraseña: </label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese contraseña:"
-                        minlength="2" maxlength="50">
+                        minlength="2" maxlength="50" value="@empleado.password">
                 </div>
                 <div class="form-group">
-                    <label for="SelectorArea">Seleccione area empleado: </label>
-                    <select class="form-control" id="Areaid" name="Areaid">
-                        <option value="" selected="selected">Seleccione </option>
-                        <option value="1">Adminstracion</option>
-                        <option value="2">Desarrollo</option>
-                        <option value="3">SoporteIT</option>
-                    </select>
+                    <label for="area">Estado </label>
+                    <input type="text" class="form-control" id="active" name="active" placeholder="Ingrese estado"
+                        minlength="2" maxlength="50" value="@empleado.usuario">
                 </div>
+                <div class="form-group">
+                    <label for="area">Areaid </label>
+                    <input type="text" class="form-control" id="Areaid" name="Areaid" placeholder="Ingrese area"
+                        minlength="2" maxlength="50" value="@empleado.Areaid">
+                </div>
+                <div class="form-group">
+                    <label for="area">Sedeid </label>
+                    <input type="text" class="form-control" id="Sedeid" name="Sedeid" placeholder="Ingrese sede"
+                        minlength="2" maxlength="50" value="@empleado.Sedeid">
+                </div>
+            
+
+
                 <div class="form-group">
                     <label for="SelectorArea">Seleccione sede empleado: </label>
                     <select class="form-control" id="Sedeid" name="Sedeid">
@@ -53,7 +61,7 @@
                         <option value="3">Remoto</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Registrar</button>
+                <button type="submit" class="btn btn-primary">Actulizar</button>
             </form>
         </div>
         <div class="row">
@@ -61,8 +69,9 @@
 
             </div>
             <div class="col-md-8 col-ms-12">
-
+    
             </div>
         </div>
     </div>
 </div>
+

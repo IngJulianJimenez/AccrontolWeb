@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"]*</title>
+    <!-- libreria icono desde la web -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AccrontolWeb.App.WebApp.styles.css" asp-append-version="true" />
@@ -28,10 +30,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacidad</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/GestionPersonas/Create">Registrar Empleado</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/GestionPersonas/Create">Registrar
+                                Empleado</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/GestionPersonas/ConsultarHoras">Consultar Horas</a>
+                            <a class="nav-link text-dark" asp-area=""
+                                asp-page="/GestionPersonas/ConsultarHoras">Consultar Horas</a>
                         </li>
                     </ul>
                 </div>
@@ -50,11 +54,18 @@
                 asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
-
+    <!--librerias  -->
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <!--Archivo .js para el back, con el if carga el archivo si esta configurado en el .cshtml como mandatorio -->
+    @{
+        if (ViewData["script"] != null)
+        {
+            //<script src="~/js/Create.js"></script>
+            <script src='~/js/@ViewData["script"]'></script>
+        }
+    }
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 

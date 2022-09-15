@@ -49,10 +49,11 @@ namespace Consola// Note: actual namespace depends on the project name.
             //_EliminarArea();
 
             //metodos Proyecto
+            _ObtenerTodoTrabajador();
             //_BuscadorSedeId();
             //_ObtebnerTrabajadorDos();
             //_BuscadorTrabajadorId();
-            _ActulizarTrabajador();
+            //_ActulizarTrabajador();
         }
 
         /*****************************************************
@@ -229,6 +230,17 @@ namespace Consola// Note: actual namespace depends on the project name.
                 Console.WriteLine("Ha ocurrido un error con los datos ingresados");
             }
         }
+
+        //listar primer metodo, primer metodo
+        public static void _ObtenerTodoTrabajador()
+        {
+            var listadoTrabajador= _TrabajadorRepository.ObtenerTodoTrabajador();
+            foreach (var lst in listadoTrabajador)
+            {
+                Console.WriteLine("identificacion " + lst.identificacion + " nombre " + lst.nombre + " Areaid " + lst.Areaid + " Sedeid " + lst.Sedeid + " Activo " + lst.active);
+            }
+        }
+
         //listar
         public static void _ObtebnerTrabajadorDos()
         {

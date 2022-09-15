@@ -7,9 +7,10 @@ namespace AccrontolWeb.App.WebApp
 {
     public class CreateModel : PageModel
     {
-        //inastaciar el repositorio para el CRUD
+        //instaciar (crear conexion) el repositorio para el CRUD
         private ITrabajadorRepository _TrabajadorRepository = new TrabajadorRepository(new AccrontolWeb.App.Persistencia.AppContext());
-
+        
+        //pedir solicitar al servidor
         public void OnGet()
         {
         }

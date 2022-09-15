@@ -28,7 +28,7 @@ namespace AccrontolWeb.App.Persistencia
         //agregar
         int Add(Area area);
 
-        //listar primer metodo
+        //listar primer metodo, trae todo
         IEnumerable<Area> ObtebnerArea();
 
         //listar segundo metodo, con parametro de busqueda

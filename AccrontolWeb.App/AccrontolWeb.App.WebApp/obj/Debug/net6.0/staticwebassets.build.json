@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s/QcmyRFnwkX0yE9pkmlL4quRqDdESFjhWTnz9WJ1XI=",
+  "Hash": "xpIufA96JfiutdEQCvoT4zPKbxwlaS1PrPnUoacShrQ=",
   "Source": "AccrontolWeb.App.WebApp",
   "BasePath": "_content/AccrontolWeb.App.WebApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.WebApp\\wwwroot\\js\\Create.js",
+      "SourceId": "AccrontolWeb.App.WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.WebApp\\wwwroot\\",
+      "BasePath": "_content/AccrontolWeb.App.WebApp",
+      "RelativePath": "js/Create.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Create.js"
     },
     {
       "Identity": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.WebApp\\wwwroot\\js\\site.js",

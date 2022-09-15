@@ -60,6 +60,12 @@ namespace AccrontolWeb.App.Persistencia
             return result;
         }
 
+        //listar primer metodo trae todo
+        List<Trabajador> ITrabajadorRepository.ObtenerTodoTrabajador()
+        {
+            return _appContext.Trabajador.ToList();
+        }
+
         //listar
         List<Trabajador> ITrabajadorRepository.ObtebnerTrabajadorDos(string documento)
         {

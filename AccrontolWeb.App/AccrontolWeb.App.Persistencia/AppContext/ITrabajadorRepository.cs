@@ -26,6 +26,9 @@ namespace AccrontolWeb.App.Persistencia
     {
         //agregar
         int Add(Trabajador empleado);
+                
+        //listar primer metodo, trae todo
+        List<Trabajador> ObtenerTodoTrabajador();
 
         //listar
         List<Trabajador> ObtebnerTrabajadorDos(string documento);
@@ -35,5 +38,7 @@ namespace AccrontolWeb.App.Persistencia
 
         //Actulizar, retorna un entero con el numero de registros afectados
         int ActulizarTrabajador(Trabajador empleado);
+
+
     }
 }
