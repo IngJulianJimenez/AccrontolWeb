@@ -17,13 +17,13 @@ namespace AccrontolWeb.App.WebApp
         //para lista por grupo
         public List<Trabajador> listado_Empleados = new List<Trabajador>();
 
-        //pedir solicitar al servidor
+        //pedir solicitar al servidor   
         //consultar por grupo
         public void OnGet()
         {
             //consultar todos los empelados
             listado_Empleados = _TrabajadorRepository.ObtenerTodoTrabajador();
-            Console.WriteLine(listado_Empleados);
+            //Console.WriteLine(listado_Empleados);
         }
 
         //consultar por documento
@@ -31,7 +31,7 @@ namespace AccrontolWeb.App.WebApp
         {
             //consultar un empleado
             listadoEmpleado = _TrabajadorRepository.ObtebnerTrabajadorDos(Request.Form["identificacion"]);
-            Console.WriteLine("result: "+listadoEmpleado[0]);
+            //Console.WriteLine("result: "+listadoEmpleado[0]);
         }
     }
 }

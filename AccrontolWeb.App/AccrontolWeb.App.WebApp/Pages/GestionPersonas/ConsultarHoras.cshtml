@@ -10,7 +10,7 @@
 
         </div>
         <div class="col-md-8 col-ms-12">
-            <h1>Consulta por documento</h1>
+            <h1>Editar por documento</h1>
             <form method="post">
                 <div class="form-group">
                     <label for="descripcion">Numero documento: </label>
@@ -45,12 +45,16 @@
                                     <th scope="col">Usuario</th>
                                     <th scope="col">área</th>
                                     <th scope="col">Sede</th>
-                                    <th scope="col">Activo</th>
+                                    <th scope="col">Estado</th>
                                     <th scope="col">Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!--cosulta individual, llamar lista del back ONpost -->
+                                <!--
+                                    cosulta individual, llamar lista del back ONpost 
+                                    asp-page=".\Nombrepagina_Enrutar"
+                                    asp-route-id="item.id" enviar el id (validar logica back)
+                                -->
                                 @foreach (var item in Model.listadoEmpleado)
                                 {
                                     <tr>
@@ -61,8 +65,8 @@
                                         <td>@item.Areaid</td>
                                         <td>@item.Sedeid</td>
                                         <td>@item.active</td>
-                                        <td>
-                                            <a asp-page=".\_Layout" asp-route-id="@item.id"><i class="far fa-edit"></i></a>
+                                        <td>    
+                                            <a asp-page=".\EditarEmpleado" asp-route-id="@item.id"><i class="far fa-edit"></i></a>
                                             <a asp-page=".\_Layout" asp-route-id="@item.id"><i
                                                 class="far fa-trash-alt"></i></a>
                                         </td>
@@ -95,12 +99,16 @@
                                     <th scope="col">Usuario</th>
                                     <th scope="col">área</th>
                                     <th scope="col">Sede</th>
-                                    <th scope="col">Activo</th>
+                                    <th scope="col">Estado</th>
                                     <th scope="col">Opciones</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <!--cosulta por grupo, llamar lista del back ONget -->
+                                <!--
+                                    cosulta individual, llamar lista del back ONpost 
+                                    asp-page=".\Nombrepagina_Enrutar"
+                                    asp-route-id="item.id" enviar el id (validar logica back)
+                                -->
                                 @foreach (var item in Model.listado_Empleados)
                                 {
                                     <tr>
@@ -112,7 +120,7 @@
                                         <td>@item.Sedeid</td>
                                         <td>@item.active</td>
                                         <td>
-                                            <a asp-page=".\_Layout" asp-route-id="@item.id"><i class="far fa-edit"></i></a>
+                                            <a asp-page=".\EditarEmpleado" asp-route-id="@item.id"><i class="far fa-edit"></i></a>
                                             <a asp-page=".\_Layout" asp-route-id="@item.id"><i
                                                 class="far fa-trash-alt"></i></a>
                                         </td>

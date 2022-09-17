@@ -1,0 +1,76 @@
+﻿@page
+@model AccrontolWeb.App.WebApp.EditarEmpleadoModel
+@{
+    ViewData["Title"] = "Editar Empleado";
+    Layout = "_Layout"; //Generar una plantilla con estilos
+    //variable global, para acceder a la data y dibujarla en el front @trabajador.XXXX => XXXX es un atrubuto de la tabla
+    //con el metodo type="hidden" evalue el id que llega
+    //el id que llega es solo para pintar, actulizar la logica del back para guardar los datos en la BD
+    var trabajador = Model.trabajador;
+}
+<div class="container">
+    <div class="row">
+        <div class="col-md-2 col-ms-12">
+
+        </div>
+        <div class="col-md-8 col-ms-12">
+            <h1>Editar Empleado</h1>
+            <form method="post">
+                <input type="hidden" name="id" id="id" value="@trabajador.id">
+                <div class="form-group">
+                    <label for="descripcion">Numero documento: </label>
+                    <input type="text" class="form-control" id="identificacion" name="identificacion"
+                        placeholder="Ingrese identificación" minlength="2" maxlength="50"
+                        value="@trabajador.identificacion">
+                </div>
+                <div class="form-group">
+                    <label for="area">Nombre empleado: </label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese nombre"
+                        minlength="2" maxlength="50" value="@trabajador.nombre">
+                </div>
+                <div class="form-group">
+                    <label for="area">Usuario: </label>
+                    <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingrese usuario"
+                        minlength="2" maxlength="50" value="@trabajador.usuario">
+                </div>
+                <div class="form-group">
+                    <label for="area">Contraseña: </label>
+                    <input type="password" class="form-control" id="password" name="password"
+                        placeholder="Ingrese contraseña:" minlength="2" maxlength="50" value="@trabajador.password">
+                </div>
+                <div class="form-group">
+                    <label for="area">Estado: </label>
+                    <input type="text" class="form-control" id="state" name="state" placeholder="Estado trabajador"
+                        minlength="2" maxlength="50" value="@trabajador.active">
+                </div>
+                <div class="form-group">
+                    <label for="SelectorArea">Seleccione area empleado: </label>
+                    <select class="form-control" id="Areaid" name="Areaid">
+                        <option value="@trabajador.Areaid" selected="selected">Seleccione </option>
+                        <option value="1">Adminstracion</option>
+                        <option value="2">Desarrollo</option>
+                        <option value="3">SoporteIT</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="SelectorArea">Seleccione sede empleado: </label>
+                    <select class="form-control" id="Sedeid" name="Sedeid">
+                        <option value="@trabajador.Sedeid" selected="selected">Seleccione </option>
+                        <option value="1">Bogota</option>
+                        <option value="2">Cali</option>
+                        <option value="3">Remoto</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Actulizar</button>
+            </form>
+        </div>
+        <div class="row">
+            <div class="col-md-2 col-ms-12">
+
+            </div>
+            <div class="col-md-8 col-ms-12">
+
+            </div>
+        </div>
+    </div>
+</div>
