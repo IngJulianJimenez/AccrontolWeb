@@ -18,7 +18,13 @@ namespace AccrontolWeb.App.Dominio
     public class Supervisor
     {
         public int id { get; set; }
-        public Trabajador IdTrabajadorSpr { get; set; }
+        public int Trabajadorid { get; set; }
         public string descripcionSpr { get; set; }
+
+        /*****************************************************
+        relacion entre las clases 
+        accedo a los atributos de la clase dependiente
+        *****************************************************/
+        public Trabajador Trabajador { get; set; }
     }
 }

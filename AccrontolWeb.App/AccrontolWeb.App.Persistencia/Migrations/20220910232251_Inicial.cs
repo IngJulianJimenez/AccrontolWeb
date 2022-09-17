@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
+#nullable disable
+
 namespace AccrontolWeb.App.Persistencia.Migrations
 {
     public partial class Inicial : Migration
@@ -44,17 +46,17 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                     nombreSede = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     direccion = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     telefono = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    idEmpresaid = table.Column<int>(type: "int", nullable: true)
+                    Empresaid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Sede", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Sede_Empresa_idEmpresaid",
-                        column: x => x.idEmpresaid,
+                        name: "FK_Sede_Empresa_Empresaid",
+                        column: x => x.Empresaid,
                         principalTable: "Empresa",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -68,24 +70,24 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                     usuario = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     password = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     active = table.Column<int>(type: "int", nullable: false),
-                    idAreaid = table.Column<int>(type: "int", nullable: true),
-                    idSedeid = table.Column<int>(type: "int", nullable: true)
+                    Areaid = table.Column<int>(type: "int", nullable: false),
+                    Sedeid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Trabajador", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Trabajador_Area_idAreaid",
-                        column: x => x.idAreaid,
+                        name: "FK_Trabajador_Area_Areaid",
+                        column: x => x.Areaid,
                         principalTable: "Area",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_Trabajador_Sede_idSedeid",
-                        column: x => x.idSedeid,
+                        name: "FK_Trabajador_Sede_Sedeid",
+                        column: x => x.Sedeid,
                         principalTable: "Sede",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -94,18 +96,18 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    idTrabajadorAdmid = table.Column<int>(type: "int", nullable: true),
+                    Trabajadorid = table.Column<int>(type: "int", nullable: false),
                     descripcionAdm = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Administracion", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Administracion_Trabajador_idTrabajadorAdmid",
-                        column: x => x.idTrabajadorAdmid,
+                        name: "FK_Administracion_Trabajador_Trabajadorid",
+                        column: x => x.Trabajadorid,
                         principalTable: "Trabajador",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -118,17 +120,17 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                     horaFinal = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     fecha = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     descripcionHh = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    idTrabajadorid = table.Column<int>(type: "int", nullable: true)
+                    Trabajadorid = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_RegistroHora", x => x.id);
                     table.ForeignKey(
-                        name: "FK_RegistroHora_Trabajador_idTrabajadorid",
-                        column: x => x.idTrabajadorid,
+                        name: "FK_RegistroHora_Trabajador_Trabajadorid",
+                        column: x => x.Trabajadorid,
                         principalTable: "Trabajador",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -137,18 +139,18 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    IdTrabajadorSprid = table.Column<int>(type: "int", nullable: true),
+                    Trabajadorid = table.Column<int>(type: "int", nullable: false),
                     descripcionSpr = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Supervisor", x => x.id);
                     table.ForeignKey(
-                        name: "FK_Supervisor_Trabajador_IdTrabajadorSprid",
-                        column: x => x.IdTrabajadorSprid,
+                        name: "FK_Supervisor_Trabajador_Trabajadorid",
+                        column: x => x.Trabajadorid,
                         principalTable: "Trabajador",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -157,77 +159,75 @@ namespace AccrontolWeb.App.Persistencia.Migrations
                 {
                     id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    idTrabajadorid = table.Column<int>(type: "int", nullable: true),
-                    idSupervisorid = table.Column<int>(type: "int", nullable: true),
-                    idAdministradorid = table.Column<int>(type: "int", nullable: true)
+                    Trabajadorid = table.Column<int>(type: "int", nullable: false),
+                    Supervisorid = table.Column<int>(type: "int", nullable: true),
+                    Administracionid = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SuperAdminTrabajador", x => x.id);
                     table.ForeignKey(
-                        name: "FK_SuperAdminTrabajador_Administracion_idAdministradorid",
-                        column: x => x.idAdministradorid,
+                        name: "FK_SuperAdminTrabajador_Administracion_Administracionid",
+                        column: x => x.Administracionid,
                         principalTable: "Administracion",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "id");
                     table.ForeignKey(
-                        name: "FK_SuperAdminTrabajador_Supervisor_idSupervisorid",
-                        column: x => x.idSupervisorid,
+                        name: "FK_SuperAdminTrabajador_Supervisor_Supervisorid",
+                        column: x => x.Supervisorid,
                         principalTable: "Supervisor",
-                        principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        principalColumn: "id");
                     table.ForeignKey(
-                        name: "FK_SuperAdminTrabajador_Trabajador_idTrabajadorid",
-                        column: x => x.idTrabajadorid,
+                        name: "FK_SuperAdminTrabajador_Trabajador_Trabajadorid",
+                        column: x => x.Trabajadorid,
                         principalTable: "Trabajador",
                         principalColumn: "id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Administracion_idTrabajadorAdmid",
+                name: "IX_Administracion_Trabajadorid",
                 table: "Administracion",
-                column: "idTrabajadorAdmid");
+                column: "Trabajadorid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_RegistroHora_idTrabajadorid",
+                name: "IX_RegistroHora_Trabajadorid",
                 table: "RegistroHora",
-                column: "idTrabajadorid");
+                column: "Trabajadorid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Sede_idEmpresaid",
+                name: "IX_Sede_Empresaid",
                 table: "Sede",
-                column: "idEmpresaid");
+                column: "Empresaid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SuperAdminTrabajador_idAdministradorid",
+                name: "IX_SuperAdminTrabajador_Administracionid",
                 table: "SuperAdminTrabajador",
-                column: "idAdministradorid");
+                column: "Administracionid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SuperAdminTrabajador_idSupervisorid",
+                name: "IX_SuperAdminTrabajador_Supervisorid",
                 table: "SuperAdminTrabajador",
-                column: "idSupervisorid");
+                column: "Supervisorid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_SuperAdminTrabajador_idTrabajadorid",
+                name: "IX_SuperAdminTrabajador_Trabajadorid",
                 table: "SuperAdminTrabajador",
-                column: "idTrabajadorid");
+                column: "Trabajadorid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Supervisor_IdTrabajadorSprid",
+                name: "IX_Supervisor_Trabajadorid",
                 table: "Supervisor",
-                column: "IdTrabajadorSprid");
+                column: "Trabajadorid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Trabajador_idAreaid",
+                name: "IX_Trabajador_Areaid",
                 table: "Trabajador",
-                column: "idAreaid");
+                column: "Areaid");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Trabajador_idSedeid",
+                name: "IX_Trabajador_Sedeid",
                 table: "Trabajador",
-                column: "idSedeid");
+                column: "Sedeid");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

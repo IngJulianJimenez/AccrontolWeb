@@ -22,12 +22,13 @@ namespace AccrontolWeb.App.Persistencia
 
     en la interface crear las acciones CrUd
     *****************************************************/
-    public interface IAreaRepository{
+    public interface IAreaRepository
+    {
 
         //agregar
-        int Add(Area area); 
-      
-        //listar primer metodo
+        int Add(Area area);
+
+        //listar primer metodo, trae todo
         IEnumerable<Area> ObtebnerArea();
 
         //listar segundo metodo, con parametro de busqueda
@@ -43,9 +44,9 @@ namespace AccrontolWeb.App.Persistencia
         Area BuscadorAreaId(int id);
 
         //Actulizar, retorna un entero con el numero de registros afectados
-        int ActulizarArea (Area area);
+        int ActulizarArea(Area area);
 
         //Eliminar, retorna un entero con el numero de registros afectados
-        int EliminarArea (Area area);
+        int EliminarArea(Area area);
     }
 }

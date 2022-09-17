@@ -18,11 +18,19 @@ namespace AccrontolWeb.App.Dominio
         public int id { get; set; }
 
         /*****************************************************
+        foreaneas
+        *****************************************************/
+        public int Trabajadorid { get; set; }
+        public int? Supervisorid { get; set; }
+        public int? Administracionid { get; set; }
+
+        /*****************************************************
         relacion entre las clases Trabajador, Supervisor y Administrador 
         accedo a los atributos de la clase dependiente
         *****************************************************/
-        public Trabajador idTrabajador { get; set; }
-        public Supervisor idSupervisor { get; set; }
-        public Administracion idAdministrador { get; set; }
+        public Trabajador Trabajador { get; set; }
+        public Supervisor Supervisor { get; set; }
+        public Administracion Administracion { get; set; }
+        
     }
 }

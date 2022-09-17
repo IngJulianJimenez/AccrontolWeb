@@ -43,5 +43,6 @@ namespace AccrontolWeb.App.Persistencia{
                 .UseSqlServer("Server=DESKTOP-J4MCPL0; Database=BD_Proyecto;User ID=mintic_8;Password=mintic_8;");
             }
         }
+        
     }
 }
