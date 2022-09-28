@@ -15,3 +15,20 @@ D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\A
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Dominio.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.csproj.CopyComplete
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Persistencia.deps.json
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Persistencia.runtimeconfig.json
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Persistencia.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Persistencia.pdb
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Dominio.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\bin\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.csproj.AssemblyReference.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.AssemblyInfoInputs.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.AssemblyInfo.cs
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.csproj.CopyComplete
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\refint\AccrontolWeb.App.Persistencia.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.pdb
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\AccrontolWeb.App.Persistencia.genruntimeconfig.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Persistencia\obj\Debug\net6.0\ref\AccrontolWeb.App.Persistencia.dll

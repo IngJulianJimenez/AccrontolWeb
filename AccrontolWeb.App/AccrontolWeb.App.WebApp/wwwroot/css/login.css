@@ -1,29 +1,9 @@
-html {
-  font-size: 14px;
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  margin-bottom: 60px;
- 
-}
-/*--------------------------------*/
 body{
 	margin: 0;
 	padding: 0;
-	background:url(https://i.stack.imgur.com/5kzat.png);;
+	background:url(https://i.stack.imgur.com/5kzat.png);
 
-	color: rgba(28, 214, 205, 0.835);
+	color: #03a9f4;
 	font-family: Arial;
 	font-size: 12px;
 }
@@ -75,9 +55,8 @@ body{
 }
 
 .login{
-	position:  absolute;
-	color:rgb(9, 231, 198);
-	top: calc(40% - 75px);
+	position: absolute;
+	top: calc(50% - 75px);
 	left: calc(50% - 50px);
 	height: 150px;
 	width: 350px;
@@ -145,7 +124,7 @@ body{
 	border: 1px solid rgba(255,255,255,0.9);
 }
 
-.loginogin input[type=button]:focus{
+.login input[type=button]:focus{
 	outline: none;
 }
 
@@ -155,12 +134,4 @@ body{
 
 ::-moz-input-placeholder{
    color: rgba(255,255,255,0.6);
-}
-/*---------------------------*/
-.imgper{
-  vertical-align: middle;
-  position:absolute;
-  top: calc(20% - 75px);
-  left: calc(50% - 50px);
-
 }

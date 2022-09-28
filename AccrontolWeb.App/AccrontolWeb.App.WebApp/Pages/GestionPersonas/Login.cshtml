@@ -1,0 +1,42 @@
+﻿@page
+@model AccrontolWeb.App.WebApp.LoginModel
+@{
+    ViewData["Title"] = "login";
+   //Generar una plantilla con estilos
+    //invocar archivo JavaScript debe estar configurado en el Layout, en la aprte inferior
+    //de esta forma se le solicita al codigo que es mandatorio
+   
+    ViewData["css"] ="login.css";
+}
+
+<head>
+   
+    <link rel="stylesheet" href="~/css/login.css" />
+    
+</head>
+
+  <div class="body"></div>
+		<div class="grad"></div>
+		<div class="header">
+			<div>Accrontol<span>Web</span></div>
+		</div>
+		<br>
+		<div class="login">
+        <img class="imgper" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQL-YDLwDpdjFxnqI9CgnAH3nBDTc3NEp9UA&usqp=CAU" alt="" width="72" height="57">
+         <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+         <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+        <div class="form-floating">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+
+        <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+        </div>
+        <input type="button" value="Login">
+	 </div>

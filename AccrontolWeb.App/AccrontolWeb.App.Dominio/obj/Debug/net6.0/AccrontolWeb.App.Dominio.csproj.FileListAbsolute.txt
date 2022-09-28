@@ -10,3 +10,15 @@ D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\A
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\refint\AccrontolWeb.App.Dominio.dll
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
 D:\Julian\MinTic\Fundamentos\Desarrollo Software\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\ref\AccrontolWeb.App.Dominio.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\bin\Debug\net6.0\AccrontolWeb.App.Dominio.deps.json
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\bin\Debug\net6.0\AccrontolWeb.App.Dominio.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\bin\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.AssemblyInfo.cs
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\refint\AccrontolWeb.App.Dominio.dll
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\AccrontolWeb.App.Dominio.pdb
+C:\Users\jota padilla\Documents\grupo 8\AccrontolWeb\AccrontolWeb\AccrontolWeb.App\AccrontolWeb.App.Dominio\obj\Debug\net6.0\ref\AccrontolWeb.App.Dominio.dll

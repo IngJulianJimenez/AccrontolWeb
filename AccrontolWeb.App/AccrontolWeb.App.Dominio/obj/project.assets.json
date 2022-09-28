@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ju_li\\.nuget\\packages\\": {}
+    "C:\\Users\\jota padilla\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\jota padilla\\Documents\\grupo 8\\AccrontolWeb\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj",
       "projectName": "AccrontolWeb.App.Dominio",
-      "projectPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\ju_li\\.nuget\\packages\\",
-      "outputPath": "D:\\Julian\\MinTic\\Fundamentos\\Desarrollo Software\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\obj\\",
+      "projectPath": "C:\\Users\\jota padilla\\Documents\\grupo 8\\AccrontolWeb\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\AccrontolWeb.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\jota padilla\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jota padilla\\Documents\\grupo 8\\AccrontolWeb\\AccrontolWeb\\AccrontolWeb.App\\AccrontolWeb.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ju_li\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\jota padilla\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -49,7 +49,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
